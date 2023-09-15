@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro</title>
+</head>
+<body>
+    <h1>Descobrindo se seu carro é foda!</h1>
+    Qual a marca do seu carro: <input type="text" name="txtcar" id="txtcar">
+    <input type="button" value="Avaliar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var c = window.document.getElementById('txtcar')
+            var res = window.document.getElementById('res')
+            var txtc = String(c.value)
+            if (txtc == 'BMW') {
+                res.innerHTML = 'Seu carro é foda'
+            }else
+                res.innerHTML = 'Seu carro é uma merda'
+            
+        }
+
+
+    </script>
+    
+</body>
+</html>
