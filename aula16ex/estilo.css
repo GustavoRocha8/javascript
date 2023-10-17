@@ -17,6 +17,11 @@ section {
     
 }
 
+select {
+    margin: 2px;
+    width: 15em;
+}
+
 footer {
     font-style: italic;
     color: #ffff;
